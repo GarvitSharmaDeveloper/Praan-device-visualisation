@@ -4,19 +4,34 @@
     /* background-color: lightblue; */
 }
 
-.background {
+.background-dark {
     position: absolute;
     margin-top: 100px;
     z-index: 0;
     width: 100vw;
-    height: 900px;
-    background-color: transparent;
+    height: 770px;
+    /* background-color: transparent; */
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./res/Group\ 6.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
+
+.background-light {
+    position: absolute;
+    margin-top: 100px;
+    z-index: 0;
+    width: 100vw;
+    height: 770px;
+    /* background-color: transparent; */
     background-image: url("./res/Group\ 6.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     filter: blur(15px);
   -webkit-filter: blur(15px);
 }
+
 
 .col1 {
     position: absolute;
@@ -30,7 +45,20 @@
     align-items: center;
 }
 
-.title-logo {
+.col2 {
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 100%;
+    background-image: url("/src/res/mk-d.ccd0492.dd08ce10cc33979e2b4cfe315fbc9374.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+
+.title-logo-dark {
     margin-right: 10%;
     margin-top: 15%;
     width: 50%;
@@ -38,6 +66,19 @@
     background-image: url("./res/praanwt.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    transition: 1s;
+}
+
+.title-logo-light {
+    margin-right: 10%;
+    margin-top: 15%;
+    width: 50%;
+    height: 400px;
+    background-image: url("./res/praanwt.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .title-info {

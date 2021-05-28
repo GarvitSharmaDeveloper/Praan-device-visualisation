@@ -1,1 +1,9 @@
-    
+.vis-container {
+    width: 100vw;
+    /* height: 700px; */
+}
+
+.vis-heading {
+    margin-bottom: 20px;
+    font-size: 4em;
+}

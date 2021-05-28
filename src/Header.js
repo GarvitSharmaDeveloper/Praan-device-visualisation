@@ -1,21 +1,16 @@
 import React, { useState } from 'react'
 import './Header.css'
 
-const Header = () => {
-
-    const [mode, setMode] = useState(true);
+const Header = ({toggleMode, mode}) => {
 
     return (
-        <div className='header-container'>
-            <div className = "logo"></div>
-            <div className="myname"></div>
-            {/* <div
-                className='mode-button'
-                style={{ justifyContent: mode ? 'flex-start' : 'flex-end' }}
-                onClick={() => setMode(!mode)}
-            >
-                <div className='mode-button-switch' />
-            </div> */}
+        <div className='header-container' style = {{backgroundColor: mode?'white':'#121212'}}>
+            <div className = {mode?"logolight":"logodark"}></div>
+
+            {mode?<div className="nightmode" onClick = {toggleMode}></div>:
+            <div className="daymode" onClick = {toggleMode}></div>}
+            
+            
         </div>
     )
 }

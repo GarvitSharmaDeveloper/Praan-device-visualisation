@@ -9,9 +9,10 @@
     position: fixed;
     z-index: 2;
     justify-content: flex-start;
+    transition: 1s;
 }
 
-.logo {
+.logolight {
     margin-left: 2  0px;
     width: 150px;
     height: 150px;
@@ -19,17 +20,41 @@
     background-image: url("./res/praan.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
-.myname {
+.logodark {
+  margin-left: 2  0px;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  background-image: url("./res/praan.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.nightmode {
     margin-left: auto;
     width: 50px;
     height: 50px;
     margin-right: 50px;
-
+    cursor: pointer;
     background-image: url("./res/dark-mode-6682.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+
+
+.daymode {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+  background-image: url("./res/—Pngtree—vector\ sun\ icon_4946341.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .mode-button {
